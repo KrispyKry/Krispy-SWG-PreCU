@@ -1,0 +1,35 @@
+# Proprietary SWG client/game data: never commit
+*.tre
+*.toc
+*.exe
+*.dll
+client/
+game-data/
+
+# Local Core3 checkout (managed by scripts/fetch-core3.sh)
+Core3/
+
+# Server secrets and local state
+*.env
+.env.*
+!*.env.example
+*config-local.lua
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx
+*.sql.gz
+backups/
+logs/
+
+# Build/editor artifacts
+build/
+cmake-build-*/
+.cache/
+.idea/
+.vscode/
+*.log
+*.swp
+.DS_Store
+Thumbs.db
