@@ -32,6 +32,18 @@ less README.md
 
 For a Docker-based development environment, use the instructions in `Core3/README.md` and `Core3/docker/`.
 
+## Compliance status
+
+This repository is currently a bootstrap/foundation repository and is **not yet ready for a SWGEmu community-listing submission**. Read [AGPL-COMPLIANCE.md](AGPL-COMPLIANCE.md) and [PUBLIC-SOURCE-BOUNDARY.md](PUBLIC-SOURCE-BOUNDARY.md) before adding Core3-derived server changes or publishing a release.
+
+Run the public-tree audit before every commit intended for publication:
+
+```bash
+./scripts/audit-public-tree.sh
+```
+
+The audit prevents common client-file, secret, backup, and private-configuration leaks. It does not replace AGPL review, source review, or SWGEmu’s submission decision.
+
 ## Licensing
 
 Core3 and its engine are AGPL-3.0-or-later. Preserve upstream copyright and license notices. If a modified version is made available to users over a network, AGPL section 13 requires offering those users the corresponding source code. See `LICENSE-NOTICE.md` and the upstream `Core3/COPYING` file after bootstrap.
